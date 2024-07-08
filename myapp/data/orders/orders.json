@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "customerName": "Mils Muliaina",
+        "pizzaType": "olive",
+        "baseType": "thin",
+        "quantity": 1,
+        "sides": [
+            "garlic bread",
+            "onion rings"
+        ],
+        "drink": "coke",
+        "status": "new"
+    },
+    {
+        "id": 2,
+        "customerName": "Carlos Spencer",
+        "pizzaType": "aubergine",
+        "baseType": "gf",
+        "quantity": 1,
+        "sides": [
+            "spicy chicken wings"
+        ],
+        "drink": "none",
+        "status": "complete"
+    },
+    {
+        "id": 3,
+        "customerName": "Jerome Kaino",
+        "pizzaType": "cheese",
+        "baseType": "standard",
+        "quantity": 1,
+        "sides": "garlic bread",
+        "drink": "lemonade",
+        "status": "new"
+    },
+    {
+        "id": 4,
+        "customerName": "keven mealamu",
+        "pizzaType": "pepperonie",
+        "baseType": "thin",
+        "quantity": 1,
+        "sides": "none",
+        "drink": "steinlager",
+        "status": "new"
+    },
+    {
+        "id": 5,
+        "customerName": "Brad Thorn",
+        "pizzaType": "magherita",
+        "baseType": "thick",
+        "quantity": 1,
+        "sides": [
+            "Onion Rings",
+            "spicy chicken wings"
+        ],
+        "drink": "water",
+        "status": "complete"
+    }
+]
