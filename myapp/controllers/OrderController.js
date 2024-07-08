@@ -19,9 +19,20 @@ class OrderController {
         const response = this.OrderService.createOrder(order);
         res.status(200).json({
             actionStatus: "New order created successfully",
-            order: order
+            order: response
         });
     }
+
+    deleteOrder(req, res) {
+        const orderId = parseInt(req.params.id);
+        const deletedOrder = this.OrderService.deleteOrder(orderId);
+        res.status(200).json({
+            actionStatus: "Deleted order successfully",
+            order: deletedOrder
+        });
+
+    }
 }
+
 
 module.exports = OrderController;
