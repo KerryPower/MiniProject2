@@ -8,5 +8,8 @@ const orderController = new OrderController(orderService);
 router.get("/", (req, res) => {
     orderController.getOrders(req, res);
 });
+router.post("/", (req, res)=> {
+    orderController.createOrder(req, res);
+})
 
 module.exports = router;
