@@ -23,6 +23,15 @@ class OrderService {
         return deletedOrders;
     }
 
+    updateOrder(orderId, updatedOrderData) {
+        const index = this.orders.findIndex(order => order.id === orderId);
+        this.orders[index] = {
+            ...this.orders[index],
+            ...updatedOrderData
+        };
+        return this.orders[index];
+
+    }
 }
 
 module.exports = OrderService;

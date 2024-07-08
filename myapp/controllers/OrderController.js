@@ -32,7 +32,21 @@ class OrderController {
         });
 
     }
+
+    updateOrder(req, res) {
+        const orderId = parseInt(req.params.id);
+        const updatedOrderData = req.body;
+        const updatedOrder = this.OrderService.updateOrder(orderId, updatedOrderData)
+        res.status(200).json({
+            actionStatus: "Updated order successfully",
+            order: updatedOrder
+        });
+
+
+    }
+
 }
+
 
 
 module.exports = OrderController;

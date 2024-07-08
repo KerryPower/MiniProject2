@@ -14,5 +14,8 @@ router.post("/", (req, res)=> {
 router.delete("/:id", (req, res) => {
     orderController.deleteOrder(req, res)
 });
+router.put("/:id", (req, res) => {
+    orderController.updateOrder(req, res)
+});
 
 module.exports = router;
