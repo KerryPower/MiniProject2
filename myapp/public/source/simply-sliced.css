@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: #efbf5d;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    text-align: center;
+}
+
+footer {
+    background-color: #e29734;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    padding: 5px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+nav {
+    background-color: #e29734;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #613f00;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.pizza-grid-item {
+    line-height: 5%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #613f00;
+}
+
+.pizza-grid-item:hover {
+    background-color: #f7dcb4;
+}
+
+.pizza-grid img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.pizza-grid p {
+    font-size: small;
+    margin: 5px 0;
+}
+
+.order-button {
+    background-color: #e29734;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.order-button:hover {
+    background-color: #613f00;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
