@@ -109,3 +109,27 @@ nav ul li a:hover {
 .disabled {
     cursor: not-allowed;
 }
+
+.order-card {
+    border-radius: 8px;
+    border: 1px solid #613f00;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+.order-card:hover {
+    background-color: #f7dcb4;
+}
+
+
+.order-card ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.order-card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

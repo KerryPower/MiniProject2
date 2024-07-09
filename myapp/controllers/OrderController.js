@@ -5,7 +5,7 @@ class OrderController {
 
     getOrders(req, res) {
         const orders = this.OrderService.getOrders();
-
+    
         if (req.query.status) {
             const filteredOrders = this.OrderService.filteredOrders(req.query.status);
             res.status(200).json(filteredOrders);

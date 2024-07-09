@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pizza ordering website for Simply Sliced">
+    <meta name="keywords" content="Pizza, Simple, Cheese, Mushroom, Aubergine, Magherita, Pepperoni, Olive">
+    <meta name="author" content="Kerry Power">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Sliced</title>
+    <link rel="stylesheet" href="./source/simply-sliced.css">
+
+</head>
+
+<body>
+
+    <template id="orderTemplate">
+        <div class="order-card">
+            <h3>OrderID: <span id="orderId"></span></h3>
+            <ul>
+                <li>Name: <span id="customerName"></span></li>
+                <li>Pizza: <span id="pizzaType"></span></li>
+                <li>Base: <span id="baseType"></span></li>
+                <li>Quantity: <span id="quantity"></span></li>
+                <li>Sides: <span id="sides"></span></li>
+                <li>Drink: <span id="drink"></span></li>
+            </ul>
+        </div>
+    </template>
+
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./source/images/logo.png" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="index.html">Contact us</a></li>
+                <li><a href="index.html">About our store</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>New Orders</h1>
+            <div id="ordersContainer"></div>
+        </section>
+
+        <div>
+            <h2>Simply Sliced</h2>
+            <li>Pizza done simply, Pizza done well!</li>
+        </div>
+    </main>
+
+    <footer>
+        <li>&copy; 2022 Simply Sliced.</li>
+        <ul>
+            <li>Find us on:</li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li>|</li>
+            <li><a href="https://www.tripadvisor.co.nz/">Trip Adviser</a></li>
+            <li>|</li>
+            <li><a href="https://www.twitter.com/">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function addCard(order) {
+            const template = document.getElementById("orderTemplate").content.cloneNode(true);
+
+            template.querySelector('#orderId').innerText = order.id;
+            template.querySelector('#customerName').innerText = order.customerName;
+            template.querySelector('#pizzaType').innerText = order.pizzaType;
+            template.querySelector('#baseType').innerText = order.baseType;
+            template.querySelector('#quantity').innerText = order.quantity;
+            template.querySelector('#sides').innerText = Array.isArray(order.sides) ? order.sides.join(', ') : '';
+            template.querySelector('#drink').innerText = order.drink;
+
+            return template;
+        }
+
+        function updateOrders(orders) {
+            const ordersContainer = document.querySelector('#ordersContainer');
+            ordersContainer.innerHTML = '';
+
+            orders.forEach(order => {
+                const card = addCard(order);
+                ordersContainer.appendChild(card);
+            });
+        }
+
+
+
+        async function fetchOrders() {
+            const response = await fetch('/orders/?status=new');
+            const orders = await response.json();
+            updateOrders(orders);
+        }
+
+        fetchOrders();
+
+
+        setInterval(fetchOrders, 5000);
+    </script>
+
+</html>

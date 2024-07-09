@@ -6,9 +6,9 @@ const orderService = new OrderService();
 const orderController = new OrderController(orderService);
 
 router.get("/", (req, res) => {
-    orderController.getOrders(req, res)
+     orderController.getOrders(req, res);
 });
-router.post("/", (req, res)=> {
+router.post("/", (req, res) => {
     orderController.createOrder(req, res)
 });
 router.delete("/:id", (req, res) => {

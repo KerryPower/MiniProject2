@@ -2,59 +2,63 @@
     {
         "id": 1,
         "customerName": "Mils Muliaina",
-        "pizzaType": "olive",
-        "baseType": "thin",
+        "pizzaType": "Olive",
+        "baseType": "Thin",
         "quantity": 1,
         "sides": [
-            "garlic bread",
-            "onion rings"
+            "Garlic Bread",
+            "Onion Rings"
         ],
-        "drink": "coke",
+        "drink": "Coke",
         "status": "new"
     },
     {
         "id": 2,
         "customerName": "Carlos Spencer",
-        "pizzaType": "aubergine",
-        "baseType": "gf",
+        "pizzaType": "Aubergine",
+        "baseType": "GF",
         "quantity": 1,
         "sides": [
-            "spicy chicken wings"
+            "Spicy Chicken Wings"
         ],
-        "drink": "none",
+        "drink": "None",
         "status": "complete"
     },
     {
         "id": 3,
         "customerName": "Jerome Kaino",
-        "pizzaType": "cheese",
-        "baseType": "standard",
+        "pizzaType": "Cheese",
+        "baseType": "Standard",
         "quantity": 1,
-        "sides": "garlic bread",
+        "sides": [
+            "Garlic Bread"
+        ],
         "drink": "lemonade",
         "status": "new"
     },
     {
         "id": 4,
         "customerName": "Keven Mealamu",
-        "pizzaType": "pepperonie",
-        "baseType": "thin",
+        "pizzaType": "Pepperoni",
+        "baseType": "Thin",
         "quantity": 1,
-        "sides": "none",
-        "drink": "steinlager",
+        "sides": [
+            "None"
+        ],
+        "drink": "Steinlager",
         "status": "new"
     },
     {
         "id": 5,
         "customerName": "Brad Thorn",
-        "pizzaType": "magherita",
-        "baseType": "thick",
+        "pizzaType": "Tomato",
+        "baseType": "Thick",
         "quantity": 1,
         "sides": [
             "Onion Rings",
-            "spicy chicken wings"
+            "Spicy Chicken Wings"
         ],
-        "drink": "water",
+        "drink": "Water",
         "status": "complete"
     }
 ]
