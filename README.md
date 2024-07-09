@@ -1,3 +1,5 @@
+A small local webserver for a pizza ordering website. 
+
 Clone the repository:
 git clone https://github.com/KerryPower/MiniProject2.git
 cd mini-project-2
