@@ -26,10 +26,10 @@ To start the server:
 ## Frontend usage 
 
 Simply Sliced's website can be accessed at:
-    [Homepage](http://localhost:3000/index.html)
+    [http://localhost:3000/index.html](http://localhost:3000/index.html)
 
 New orders can be viewed at: 
-    [Orders](http://localhost:3000/orders.html)
+    [http://localhost:3000/orders.html](http://localhost:3000/orders.html)
 
 ## Backend Usage
 
