@@ -1,10 +1,10 @@
 # Mini Project 2
 
-A small local web server for a pizza ordering website. 
+**A small local web server for a pizza ordering website.** 
 
 ## Installation 
 
->From a new terminal inside your target directory:
+**From a new terminal inside your target directory:**
 
 1. Clone the repository:  
 `git clone https://github.com/KerryPower/MiniProject2.git`
@@ -21,7 +21,7 @@ A small local web server for a pizza ordering website.
 To start the server:
 `npm start`
             
->The server will now run on http://localhost:3000.
+The server will now run on http://localhost:3000.
 
 ## Frontend usage 
 
