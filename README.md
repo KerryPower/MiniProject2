@@ -12,6 +12,7 @@ Run the server:
         The server will run on http://localhost:3000.
 
 Simply Sliced's website can then be accessed at http://localhost:3000/index.html
+    New orders can be viewed at http://localhost:3000/orders.html
 
 API calls can be made to http://localhost:3000/orders
 
