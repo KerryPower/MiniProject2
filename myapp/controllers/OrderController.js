@@ -19,7 +19,7 @@ class OrderController {
         const response = this.OrderService.createOrder(order);
         res.status(200).json({
             actionStatus: "New order created successfully",
-            order: response
+            NewOrder: response
         });
     }
 
@@ -28,7 +28,7 @@ class OrderController {
         const deletedOrder = this.OrderService.deleteOrder(orderId);
         res.status(200).json({
             actionStatus: "Deleted order successfully",
-            order: deletedOrder
+            DeletedOrder: deletedOrder
         });
 
     }
@@ -39,7 +39,7 @@ class OrderController {
         const updatedOrder = this.OrderService.updateOrder(orderId, updatedOrderData)
         res.status(200).json({
             actionStatus: "Updated order successfully",
-            order: updatedOrder
+            UpdatedOrder: updatedOrder
         });
 
 
