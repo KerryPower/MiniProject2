@@ -90,8 +90,6 @@
             });
         }
 
-
-
         async function fetchOrders() {
             const response = await fetch('/orders/?status=new');
             const orders = await response.json();
@@ -99,7 +97,6 @@
         }
 
         fetchOrders();
-
 
         setInterval(fetchOrders, 5000);
     </script>
