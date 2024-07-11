@@ -19,7 +19,7 @@ A small local web server for a pizza ordering website.
 ## Running the server
 
 To start the server:
-        `npm start`
+    `npm start`
             
 >The server will run on http://localhost:3000.
 
@@ -35,10 +35,7 @@ New orders can be viewed at:
 
 API calls can now be made to http://localhost:3000/orders
 
-**GET** calls can be filtered by status.  
-
-**POST** calls are by id with new JSON data in the request body.   
-
-**PUT** calls update orders by id.  
-
-**DELETE** calls delete orders by id.
+- **GET** calls can be filtered by status.  
+- **POST** calls are by id with new JSON data in the request body.   
+- **PUT** calls update orders by id.  
+- **DELETE** calls delete orders by id.
