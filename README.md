@@ -8,7 +8,7 @@ Install dependencies:
     npm install
 
 Run the server:
-    npm run start
+    npm start
         The server will run on http://localhost:3000.
 
 Simply Sliced's website can then be accessed at http://localhost:3000/index.html
