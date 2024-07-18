@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "pizzaType": "Cheese",
+        "price": "$23.50",
+        "img": ".../public/source/images/cheese.png",
+        "short description": ""
+    },
+    {
+        "id": 2,
+        "pizzaType": "Mushroom",
+        "price": "$25.50",
+        "img": ".../public/source/images/mushrooms.png",
+        "short description": ""
+    },
+    {
+        "id": 3,
+        "pizzaType": "Aubergine",
+        "price": "$24.50",
+        "img": ".../public/source/images/eggplant.png",
+        "short description": ""
+    },
+    {
+        "id": 4,
+        "pizzaType": "Pepperoni",
+        "price": "$26.50",
+        "img": ".../public/source/images/pepperonies.png",
+        "short description": ""
+    },
+    {
+        "id": 5,
+        "pizzaType": "Olive",
+        "price": "$24.50",
+        "img": ".../public/source/images/olives.png",
+        "short description": ""
+    },
+    {
+        "id": 6,
+        "pizzaType": "Tomato",
+        "price": "$23.50",
+        "img": ".../public/source/images/tomatoes.png",
+        "short description": ""
+    }
+]
